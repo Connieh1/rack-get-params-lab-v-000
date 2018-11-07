@@ -29,12 +29,12 @@ class Application
          product = req.params["q"]
       #   # resp.write "We don't have that item"
       #   resp.write handle_add(item)
-        # if @@items.include?(item)
-        #   @@cart << item
-        #   resp.write "added #{item}\n"
-        # else
-        #   resp.write "We don't have that item Will not add an item that is not in the @@items list"
-        # end
+         if @@items.include?(product)
+          @@cart << product
+          resp.write "added #{product}\n"
+        else
+          resp.write "We don't have that item Will not add an item that is not in the @@items list"
+        end
       else
         resp.write "Path Not Found"
     end
