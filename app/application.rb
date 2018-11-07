@@ -51,12 +51,12 @@ class Application
     end
   end
 
-  def handle_add(item)
-    if @@items.include?(item)
-      @@cart << item
-      return "added #{item}"
-    # else
-    #   return "We don't have that item Will not add an item that is not in the @@items list"
-    end
-  end
+  # def handle_add(item)
+  #   if @@items.include?(item)
+  #     @@cart << item
+  #     return "added #{item}"
+  #   # else
+  #   #   return "We don't have that item Will not add an item that is not in the @@items list"
+  #   end
+  # end
 end
