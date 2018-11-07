@@ -37,12 +37,5 @@ class Application
     end
   end
 
-  def handle_add(product)
-    if @@items.include?(product)
-      # @@cart << item
-      return "added #{product}"
-    # else
-    #   return "We don't have that item Will not add an item that is not in the @@items list"
-    end
-  end
+
 end
