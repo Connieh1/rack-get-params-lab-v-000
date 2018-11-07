@@ -32,8 +32,8 @@ class Application
          if @@items.include?(product)
           # @@cart << product
           resp.write "added #{product}\n"
-        else
-          resp.write "We don't have that item Will not add an item that is not in the @@items list"
+        # else
+        #   resp.write "We don't have that item Will not add an item that is not in the @@items list"
         end
       else
         resp.write "Path Not Found"
