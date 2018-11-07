@@ -15,8 +15,8 @@ class Application
         search_term = req.params["q"]
         resp.write handle_search(search_term)
       elsif req.path.match(/add/)
-        item = req.params["q"]
-        resp.write handle_add(item)
+        product = req.params["q"]
+        resp.write handle_add(product)
       elsif req.path.match(/cart/)
         if @@cart.empty?
           resp.write "Your cart is empty"
@@ -50,10 +50,10 @@ class Application
     end
   end
 
-  def handle_add(item)
-    if @@items.include?(item)
+  def handle_add(product)
+    if @@items.include?(product)
       # @@cart << item
-      return "added #{item}"
+      return "added #{product}"
     # else
     #   return "We don't have that item Will not add an item that is not in the @@items list"
     end
