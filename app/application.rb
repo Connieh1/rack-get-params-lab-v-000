@@ -25,7 +25,7 @@ class Application
           resp.write "#{item}\n"
           end
         end
-      # elsif req.path.match(/add/)
+      elsif req.path.match(/add/)
       #   item = req.params["q"]
       #   # resp.write "We don't have that item"
       #   resp.write handle_add(item)
