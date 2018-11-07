@@ -26,7 +26,7 @@ class Application
           end
         end
       elsif req.path.match(/add/)
-      #   item = req.params["q"]
+         product = req.params["q"]
       #   # resp.write "We don't have that item"
       #   resp.write handle_add(item)
         # if @@items.include?(item)
