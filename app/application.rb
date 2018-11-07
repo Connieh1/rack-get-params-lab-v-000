@@ -30,7 +30,7 @@ class Application
       #   # resp.write "We don't have that item"
       #   resp.write handle_add(item)
          if @@items.include?(product)
-          @@cart << product
+          # @@cart << product
           resp.write "added #{product}\n"
         else
           resp.write "We don't have that item Will not add an item that is not in the @@items list"
